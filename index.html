@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+  
+  integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="stilo.css">
+  
+  <title>Capa da Caderneta</title>
+</head>
+<body>
+    <header>
+      <div class="navbar">
+          <div class="logo"> Seja Bem Vinda!</div>
+          <ul class="links">
+
+            
+            <li><a href="pasta01/caderneta.html">Caderneta</a></li>
+            <li><a href="https://www.fadc.org.br/sites/default/files/2022-05/Cartilha-da-gestante-Fundacao-Abrinq_0.pdf">Cartilha</a></li>
+
+            <li><a href="https://auxiliomaternidadeoficial.com.br/?gad=1&gclid=CjwKCAjwscGjBhAXEiwAswQqNPtfY64cRBL3VoaFvUs7wFda-LH6m9joZy4BaSJWeJb-F4LeCGC1BhoC2YcQAvD_BwE">Conheça os seus direitos</a></li>
+          </ul>
+            <a href="#" class="action_btn">Vamos começar</a>
+            <div class="toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+           </div>
+          </div>
+
+            <div class="dropdown_menu">
+              <li><a href="sobre">sobre</a></li>
+              <li><a href="caderneta">Caderneta</a></li>
+              <li><a href="informacoes">Informações</a></li>
+              <li><a href="contatos">Contatos</a></li>
+              <li><a href="#" class="action_btn">Vamos começar</a></li>
+            </div>
+        
+    </header>
+    
+    <main>
+      <section id="hero">
+        <h1>Bem Vindo a sua caderneta de gestante.</h1>
+        <p>Uma mulher sabe o quanto a vida é cheia de emoções. Uma mulher vive diversas histórias, <br> amores e conhece muita coisa, ao longo de sua vida..</p>
+      </section>
+    </main>
+     <script>
+      const toggleBtn = document.querySelector('.toggle_btn')
+      const toggleBtnIcon = document.querySelector('.toggle_btn i')
+      const dropDownMenu = document.querySelector('.dropdown_menu')
+
+      toggleBtn.onclick = function(){
+        dropDownMenu.classList.toggle('open')
+        const isOpen = dropDownMenu.classList.contains('open')
+
+        toggleBtnIcon.classList = isOpen
+        ? 'fa-solid fa-xmark'
+        : 'fa-solid fa-bars'
+      }
+     </script>
+   
+</body>
+</html>
